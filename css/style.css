@@ -1,0 +1,464 @@
+header {
+  height: 6rem;
+  background: linear-gradient(0.25turn, #e9fac8, #ebfbee, #ebfbee, #e9fac8);
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 2.4rem 2.4rem rgba(169, 227, 75, 0.2);
+  z-index: 1;
+}
+/* Mobile */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  right: 0;
+  position: fixed;
+  margin-right: 3.2rem;
+  margin-top: 3.2rem;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #4dabf7;
+  right: 2rem;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #333;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #82c91e;
+}
+
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  gap: 4.8rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-right: 4.8rem;
+  font-family: "Patrick Hand";
+  letter-spacing: 0.2rem;
+}
+
+.company-logo {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40rem;
+  height: 40rem;
+  margin: 7rem 0;
+  background: linear-gradient(#d8f5a2, #ffd8a8);
+}
+.main-company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.604), rgba(0, 0, 0, 0.576)),
+    url(../img/back-ground-image.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  margin-bottom: 15rem;
+}
+
+.h1-class {
+  font-size: 6.4rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  color: #f2f1ec;
+  margin-bottom: 2.4rem;
+}
+
+.anchor-h1 {
+  width: 12rem;
+  height: 6.4rem;
+  border-radius: 10rem;
+  background: linear-gradient(#d8f5a2, #ffd8a8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anchor-h1:link,
+.anchor-h1:visited {
+  color: #333;
+  transition: all 0.5s;
+}
+.anchor-h1:hover,
+.anchor-h1:active {
+  color: #d9480f;
+}
+
+.anchor-class {
+  display: flex;
+  justify-content: center;
+}
+.icon-button {
+  font-size: 4rem;
+}
+/* <!--------------------************* OPIS PTAKÓW********** -------------------> */
+
+.head-h2 {
+  text-align: center;
+  font-size: 4.8rem;
+  letter-spacing: 0.3rem;
+}
+.logo-plus-h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.4rem;
+  padding-top: 4rem;
+}
+.company-logo-small {
+  height: 15rem;
+}
+
+.description-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(13, 1fr);
+  padding: 0 2.4rem;
+  row-gap: 2.4rem;
+  column-gap: 2.4rem;
+  margin-bottom: 4.8rem;
+  font-family: "Patrick Hand";
+  letter-spacing: 0.5px;
+}
+
+.pattern-design {
+  border-bottom: 2px solid #ced4da;
+  padding-bottom: 2rem;
+  margin-bottom: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+}
+.img-size {
+  height: 50rem;
+  width: 50rem;
+  border-radius: 5rem;
+  box-shadow: 0 3.2rem 3.2rem rgba(169, 227, 75, 0.1);
+}
+
+.bird-box-description-1 {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.bird-box-description-2 {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.specification-list {
+  list-style-type: none;
+}
+.bird-name {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 1.2rem;
+  color: #5c940d;
+}
+.list-item {
+  font-size: 2.2rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.4;
+}
+
+.sizing {
+  display: flex;
+  align-items: center;
+}
+
+/* <!-------- **************Galeria zdjęć************* ----------> */
+
+.photo-gallery {
+  padding-bottom: 9.6rem;
+}
+.h2-gallery {
+  text-align: center;
+  font-size: 6.4rem;
+  letter-spacing: 0.3rem;
+}
+.gallery-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 2.4rem;
+  column-gap: 2.4rem;
+  padding: 1.2rem;
+  margin-bottom: 9.6rem;
+}
+.galery-item {
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+}
+.galery-item img {
+  transition: all 0.5s;
+}
+
+.galery-item img:hover {
+  transform: scale(1.1);
+}
+
+.galery-photo-item {
+  height: 36rem;
+  width: 36rem;
+  border-radius: 0.5rem;
+}
+
+/* <!-------------**************Dostępne gatunki na sprzedaż************** --> */
+
+.h3-class {
+  text-align: center;
+  font-size: 6.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.logo-for-sale-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3.2rem;
+  margin-left: 4.8rem;
+}
+.zeberka-box-for-sale,
+.ryzowiec-box-for-sale,
+.papuga-box-for-sale {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ryzowiec-box-for-sale {
+  margin-top: 7.2rem;
+}
+.papuga-box-for-sale {
+  margin-top: 9.5rem;
+}
+
+.birds-for-sale {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding-bottom: 9.6rem;
+}
+
+.bird-type-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  margin-left: 6.4rem;
+}
+
+.birds-for-sale ul {
+  list-style-type: none;
+}
+.bird-for-sale-list {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+.icon-sale-section {
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 1.2rem;
+  color: #5c940d;
+}
+
+.zeberka-for-sale,
+.modrolotka-for-sale-image,
+.ryzowiec-for-sale {
+  height: 32rem;
+  width: 32rem;
+  border-radius: 2rem;
+}
+.img-box-for-sale {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2.4rem;
+  margin-left: 2rem;
+}
+.--margin-class {
+  margin-top: 5.8rem;
+}
+
+.modrolotka-photo-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.color-class {
+  line-height: 1.4;
+}
+
+/* <!---------------*********** Woliery********* ---------------> */
+
+.h3-woliera {
+  text-align: center;
+  font-size: 4.8rem;
+  letter-spacing: 0.3rem;
+}
+.woliera-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
+.woliera-section {
+  padding-bottom: 9.6rem;
+}
+
+.woliera-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 1.2rem;
+  column-gap: 3.2rem;
+}
+
+.woliera-img {
+  width: 55rem;
+  height: 55rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.woliera-text {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+.woliera-grid-text-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.porodowka-box {
+  margin-top: 3.6rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 3.6rem !important;
+  color: #6b7e51;
+}
+.icon-woliera-box {
+  display: inline-block;
+}
+.icon-plus-text-woliera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.porodowka-text {
+  letter-spacing: 0.05rem;
+}
+
+/***************** FOOTER SECTION ***********************/
+
+.footer-section-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 9.6rem;
+  margin-left: 20rem;
+}
+.copyright {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+
+.company-logo-footer {
+  width: 35rem;
+  height: 35rem;
+}
+.contact {
+  font-size: 2.4rem;
+  line-height: 1.7;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.2rem;
+}
+.contaact--title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+}
+.font-family {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.contact--box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.gps-link {
+  text-decoration: none;
+}
+
+.gps-link:link,
+.gps-link:visited {
+  color: #555;
+  transition: all 0.5s;
+  text-decoration: none;
+  display: inline-block;
+}
+.gps-link:hover,
+.gps-link:active {
+  color: #5c940d;
+}
+
+footer {
+  border-top: 2px solid #dee2e6;
+  background: linear-gradient(#fff3bf, #ffe8cc);
+}

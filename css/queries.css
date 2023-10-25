@@ -1,0 +1,1140 @@
+/* rem and em do NOT depend on html font size in media queries!, 1 rem = 1em = 16px */
+
+/* **********Below 1504******** */
+/* 1500px / 16px =93.75em | 94em x 16px =1504px   */
+@media (max-width: 94em) {
+  /* 8px / 16px = 0.5= 50% */
+  html {
+    font-size: 62.5%;
+  }
+  .h1-class {
+    font-size: 5.5rem;
+  }
+  .company-logo {
+    width: 35rem;
+    height: 35rem;
+  }
+  .logo-plus-h2 {
+    margin-bottom: 3.6rem;
+  }
+
+  .main-nav-list {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+  }
+  .galery-photo-item {
+    width: 45rem;
+    height: 45rem;
+  }
+  .zeberka-for-sale,
+  .ryzowiec-for-sale,
+  .modrolotka-for-sale-image {
+    width: 32rem;
+    height: 32rem;
+    margin-bottom: 2.3rem;
+  }
+  .img-box-for-sale {
+    margin-top: 0;
+  }
+  .ryzowiec-box-for-sale {
+    margin-top: 4.2rem;
+  }
+
+  .papuga-box-for-sale {
+    margin: 0;
+    margin-top: 4rem;
+  }
+  .modrolotka-photo-box {
+    margin-bottom: 0;
+  }
+}
+.woliera-img {
+  width: 50rem;
+  height: 50rem;
+}
+.woliera-heading {
+  margin-bottom: 6.4rem;
+}
+
+.woliera-grid-img-box {
+  display: inline-block;
+}
+.woliera-grid-element {
+  display: grid;
+  justify-items: center;
+}
+.footer-section-grid {
+  margin: 0;
+}
+
+/* **********Below 1300****** */
+/* 1300px / 16px =81.25em | 81em * 16=1296px  */
+@media (max-width: 81em) {
+  /* 8px / 16px = 0.5= 50% */
+  html {
+    font-size: 60%;
+  }
+  .h1-class {
+    font-size: 5.5rem;
+  }
+
+  .main-nav-list {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+  }
+  .galery-photo-item {
+    width: 40rem;
+    height: 40rem;
+  }
+  .zeberka-for-sale,
+  .ryzowiec-for-sale,
+  .modrolotka-for-sale-image {
+    width: 27rem;
+    height: 27rem;
+    margin-bottom: 2.3rem;
+  }
+  .img-box-for-sale {
+    margin-top: 0;
+  }
+  .ryzowiec-box-for-sale {
+    margin-top: 4.2rem;
+  }
+
+  .papuga-box-for-sale {
+    margin: 0;
+    margin-top: 4rem;
+  }
+  .modrolotka-photo-box {
+    margin-bottom: 0;
+  }
+}
+.woliera-img {
+  width: 45rem;
+  height: 45rem;
+}
+
+.woliera-grid-img-box {
+  display: inline-block;
+}
+.woliera-grid-element {
+  display: grid;
+  justify-items: center;
+}
+.footer-section-grid {
+  margin: 0;
+}
+
+/************Below 1008px********  ****/
+/* 1000px / 16px =62.5em | 63em * 16=1008px */
+@media (max-width: 63em) {
+  /* 8px / 16px = 0.5= 50% */
+  html {
+    font-size: 60%;
+  }
+  body {
+    position: relative;
+  }
+
+  header {
+    display: block;
+    height: 0;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transistion at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin: 0 auto;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  .company-logo {
+    margin-top: 2.4rem;
+    width: 30rem;
+    height: 23rem;
+    margin-bottom: 20rem;
+  }
+  .h1-class {
+    font-size: 4.8rem;
+    margin: 0 0.4rem;
+    padding-bottom: 1.6rem;
+  }
+  .background-image-main {
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-plus-h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .company-logo-small {
+    height: 18rem;
+  }
+  .head-h2 {
+    font-size: 4.8rem;
+    margin-bottom: 4.6rem;
+  }
+  .description-section {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .bird-box-description-1,
+  .bird-box-description-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+
+  .img-size {
+    width: 50rem;
+    height: 50rem;
+  }
+  .pattern-design {
+    padding: 2rem;
+  }
+  .img-box {
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+  .list-item {
+    margin-bottom: 3.2rem;
+  }
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .galery-photo-item {
+    height: 33rem;
+    width: 33rem;
+    border-radius: 2rem;
+  }
+  .h3-class {
+    font-size: 4.6rem;
+    margin-bottom: 9.6rem;
+  }
+  .center-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-for-sale-box {
+    margin-left: 0;
+  }
+
+  .birds-for-sale {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .zeberka-box-for-sale {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zeberka-for-sale,
+  .ryzowiec-for-sale,
+  .modrolotka-for-sale-image {
+    height: 50rem;
+    width: 50rem;
+    border-radius: 2rem;
+  }
+  .zeberka-box {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+    margin-bottom: 9.4rem;
+  }
+  .papuga-box-for-sale {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+  }
+
+  .ryzowiec-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .papuga-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .bird-type-name {
+    text-align: center;
+  }
+
+  .img-box-for-sale,
+  .modrolotka-photo-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .h3-woliera {
+    margin-bottom: 9.6rem;
+  }
+  .woliera-heading {
+    margin-bottom: 4.8rem;
+  }
+  .woliera-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .woliera-img {
+    height: 55rem;
+    width: 55rem;
+  }
+  .woliera-grid-img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .woliera-text {
+    margin-bottom: 6.4rem;
+  }
+  .footer-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3.2rem;
+    justify-items: center;
+    margin-top: 6.4rem;
+  }
+  .footer-logo-box {
+    justify-self: center;
+    margin-left: 6.4rem;
+    grid-row: 2/3;
+  }
+  .contaact--title {
+    text-align: center;
+  }
+
+  .woliera-section {
+    padding: 2rem;
+  }
+  .current-birds-for-sale {
+    padding: 2rem;
+  }
+
+  .pattern-design {
+    padding: 2rem;
+  }
+  .footer-section-grid {
+    padding: 2rem;
+  }
+  .footer-logo-box {
+    margin-left: 0;
+    margin-bottom: 6.4rem;
+  }
+}
+
+/*************** Below 704px  700px / 16px = 44em x 16px=704  ************************/
+@media (max-width: 44em) {
+  /* 8px / 16px = 0.5= 50% */
+  html {
+    font-size: 58%;
+  }
+
+  body {
+    position: relative;
+  }
+
+  header {
+    display: block;
+    height: 0;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transistion at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin: 0 auto;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  .company-logo {
+    margin-top: 2.4rem;
+    width: 30rem;
+    height: 23rem;
+    margin-bottom: 20rem;
+  }
+  .h1-class {
+    font-size: 4.8rem;
+    margin: 0 0.4rem;
+    padding-bottom: 1.6rem;
+  }
+  .background-image-main {
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-plus-h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .company-logo-small {
+    height: 18rem;
+  }
+  .head-h2 {
+    font-size: 3.5rem;
+  }
+  .description-section {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .bird-box-description-1,
+  .bird-box-description-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+
+  .img-size {
+    width: 44rem;
+    height: 44rem;
+  }
+  .pattern-design {
+    padding: 2rem;
+  }
+  .img-box {
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+  .list-item {
+    margin-bottom: 3.2rem;
+  }
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .galery-photo-item {
+    height: 44rem;
+    width: 44rem;
+    border-radius: 2rem;
+  }
+  .h3-class {
+    font-size: 4.6rem;
+    margin-bottom: 3.2rem;
+  }
+  .logo-for-sale-box {
+    margin-left: 0;
+  }
+
+  .birds-for-sale {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .zeberka-box-for-sale {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zeberka-for-sale,
+  .ryzowiec-for-sale,
+  .modrolotka-for-sale-image {
+    height: 44rem;
+    width: 44rem;
+    border-radius: 2rem;
+  }
+  .zeberka-box {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+    margin-bottom: 9.4rem;
+  }
+  .papuga-box-for-sale {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+  }
+
+  .ryzowiec-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .papuga-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-box-for-sale,
+  .modrolotka-photo-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .woliera-heading {
+    margin-bottom: 4.8rem;
+  }
+  .woliera-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .woliera-img {
+    height: 44rem;
+    width: 44rem;
+  }
+  .woliera-grid-img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .woliera-text {
+    margin-bottom: 6.4rem;
+  }
+  .footer-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3.2rem;
+  }
+  .footer-logo-box {
+    justify-self: center;
+    margin-left: 6.4rem;
+    grid-row: 2/3;
+  }
+  .contaact--title {
+    text-align: center;
+  }
+
+  .woliera-section {
+    padding: 2rem;
+  }
+  .current-birds-for-sale {
+    padding: 2rem;
+  }
+  .photo-gallery {
+    padding: 2rem;
+  }
+  .pattern-design {
+    padding: 2rem;
+  }
+  .footer-section-grid {
+    padding: 2rem;
+  }
+  .footer-logo-box {
+    margin-left: 0;
+    margin-bottom: 6.4rem;
+  }
+}
+
+/*************** Below   500px  500 / 16px = 31em 
+31em x 16 = 496px ************************/
+@media (max-width: 31em) {
+  /* 8px / 16px = 0.5= 50% */
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    position: relative;
+  }
+
+  header {
+    display: block;
+    height: 0;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transistion at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin: 0 auto;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  .company-logo {
+    margin-top: 5rem;
+    width: 30rem;
+    height: 28rem;
+    margin-bottom: 20rem;
+  }
+  .h1-class {
+    font-size: 4.8rem;
+    margin: 0 0.4rem;
+    padding-bottom: 1.6rem;
+  }
+  .background-image-main {
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-plus-h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .company-logo-small {
+    height: 18rem;
+  }
+  .head-h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .description-section {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .bird-box-description-1,
+  .bird-box-description-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+
+  .img-size {
+    width: 38rem;
+    height: 38rem;
+  }
+  .pattern-design {
+    padding: 2rem;
+  }
+  .img-box {
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+  .list-item {
+    margin-bottom: 3.2rem;
+  }
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .galery-photo-item {
+    height: 38rem;
+    width: 38rem;
+    border-radius: 2rem;
+  }
+  .h3-class {
+    font-size: 4.6rem;
+    margin-bottom: 3.2rem;
+  }
+  .logo-for-sale-box {
+    margin-left: 0;
+  }
+
+  .birds-for-sale {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .zeberka-box-for-sale {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zeberka-for-sale,
+  .ryzowiec-for-sale,
+  .modrolotka-for-sale-image {
+    height: 38rem;
+    width: 38rem;
+    border-radius: 2rem;
+  }
+  .zeberka-box {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+    margin-bottom: 9.4rem;
+  }
+  .papuga-box-for-sale {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+  }
+
+  .ryzowiec-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .papuga-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-box-for-sale,
+  .modrolotka-photo-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .woliera-heading {
+    margin-bottom: 4.8rem;
+  }
+  .woliera-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .woliera-img {
+    height: 38rem;
+    width: 38rem;
+  }
+  .woliera-grid-img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .woliera-text {
+    margin-bottom: 6.4rem;
+  }
+  .footer-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3.2rem;
+  }
+  .footer-logo-box {
+    justify-self: center;
+    margin-left: 6.4rem;
+    grid-row: 2/3;
+  }
+  .contaact--title {
+    text-align: center;
+  }
+
+  .woliera-section {
+    padding: 2rem;
+  }
+  .current-birds-for-sale {
+    padding: 2rem;
+  }
+  .photo-gallery {
+    padding: 2rem;
+  }
+  .pattern-design {
+    padding: 2rem;
+  }
+  .footer-section-grid {
+    padding: 2rem;
+  }
+  .footer-logo-box {
+    margin-left: 0;
+    margin-bottom: 6.4rem;
+  }
+  .contact--box {
+    font-size: 2rem;
+  }
+}
+
+/*************** Below   400px  400 / 16px = 25em 
+ ************************/
+@media (max-width: 25em) {
+  /* 8px / 16px = 0.5= 50% */
+  html {
+    font-size: 45%;
+  }
+
+  body {
+    position: relative;
+  }
+
+  header {
+    display: block;
+    height: 0;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.918);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transistion at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin: 0 auto;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  .company-logo {
+    margin-top: 5rem;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 20rem;
+  }
+  .h1-class {
+    font-size: 4.8rem;
+    margin: 0 0.4rem;
+    padding-bottom: 1.6rem;
+  }
+  .background-image-main {
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-plus-h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .company-logo-small {
+    height: 18rem;
+  }
+  .head-h2 {
+    font-size: 3.2rem;
+  }
+  .description-section {
+    padding: 0;
+  }
+
+  .bird-box-description-1,
+  .bird-box-description-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+
+  .img-size {
+    width: 38rem;
+    height: 38rem;
+  }
+  .pattern-design {
+    padding: 0;
+  }
+  .img-box {
+    grid-row: 1;
+    margin-bottom: 3.2rem;
+  }
+
+  .list-item {
+    margin-bottom: 3.2rem;
+  }
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .galery-photo-item {
+    height: 38rem;
+    width: 38rem;
+    border-radius: 2rem;
+  }
+  .h3-class {
+    font-size: 4.8rem;
+    margin-bottom: 3.2rem;
+  }
+  .birds-for-sale {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .zeberka-box-for-sale {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zeberka-for-sale,
+  .ryzowiec-for-sale,
+  .modrolotka-for-sale-image {
+    height: 38rem;
+    width: 38rem;
+    border-radius: 2rem;
+  }
+  .img-box-for-sale,
+  .modrolotka-photo-box {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .zeberka-box {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+    margin-bottom: 9.4rem;
+  }
+  .papuga-box-for-sale {
+    padding-bottom: 2.4rem;
+    border-bottom: 2px solid #ced4da;
+  }
+
+  .ryzowiec-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .papuga-box-for-sale {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .woliera-heading {
+    margin-bottom: 4.8rem;
+  }
+  .woliera-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .woliera-img {
+    height: 38rem;
+    width: 38rem;
+  }
+  .woliera-grid-img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .woliera-text {
+    margin-bottom: 6.4rem;
+  }
+  .footer-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3.2rem;
+  }
+  .footer-logo-box {
+    justify-self: center;
+    margin-left: 6.4rem;
+    grid-row: 2/3;
+  }
+  .contaact--title {
+    text-align: center;
+  }
+
+  .woliera-section {
+    padding: 0;
+  }
+  .current-birds-for-sale {
+    padding: 0;
+  }
+  .photo-gallery {
+    padding: 2rem;
+  }
+
+  .footer-section-grid {
+    padding: 0;
+  }
+  .footer-logo-box {
+    margin-left: 0;
+    margin-bottom: 6.4rem;
+  }
+  .contact--box {
+    font-size: 2rem;
+  }
+}
