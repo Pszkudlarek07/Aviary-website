@@ -3,7 +3,7 @@
 # Aviary-website
 <h1>   Website committed to different kind of breeding birds. </h1> 
 
-<h3>   Livepreview - Check it ! 🖱️  www.wolieramariusza.pl 🦜</h3>
+<h3>   Livepreview - Check it ! 🔗  www.wolieramariusza.pl 🦜</h3>
 
 ![image](https://github.com/Pszkudlarek07/Aviary-website/assets/143716328/dc7345b6-ca26-4dcb-8be0-78e1646ee893)
 
